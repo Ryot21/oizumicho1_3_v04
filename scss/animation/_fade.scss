@@ -10,8 +10,10 @@
         通常のfadeアニメーション
     --------------------------------------- */
     &-fade{
+        opacity: 0;
         animation-name:fadeAnime;
         perspective-origin: left center;
+        animation-fill-mode: forwards;
     }
     @keyframes fadeAnime{
         from {
@@ -25,8 +27,10 @@
         fadeUPアニメーション
     --------------------------------------- */
     &-fadeUp{
+        opacity: 0;
         animation-name:fadeUpAnime;
         perspective-origin: left center;
+        animation-fill-mode: forwards;
     }
     @keyframes fadeUpAnime{
         from {
@@ -42,7 +46,9 @@
         fadeDownアニメーション
     --------------------------------------- */
     &-fadeDown{
+        opacity: 0;
         animation-name:fadeDownAnime;
+        animation-fill-mode: forwards;
     }
     @keyframes fadeDownAnime{
         from {
@@ -58,7 +64,9 @@
         fadeRightアニメーション
     --------------------------------------- */
     &-fadeRight{
+        opacity: 0;
         animation-name:fadeRightAnime;
+        animation-fill-mode: forwards;
     }
     @keyframes fadeRightAnime{
         from {
@@ -74,7 +82,9 @@
         fadeLeftアニメーション
     --------------------------------------- */
     &-fadeLeft{
+        opacity: 0;
         animation-name:fadeLeftAnime;
+        animation-fill-mode: forwards;
     }
     @keyframes fadeLeftAnime{
         from {
