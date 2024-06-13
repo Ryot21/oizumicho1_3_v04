@@ -3747,43 +3747,43 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-f-view .c-contentsBox.-f-title {
   top: 5%;
-  left: 7%;
+  left: 8%;
   width: 60%;
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-title {
-    top: 5%;
-    left: 3%;
-    width: 20%;
+    left: 3.5%;
+    top: 10%;
+    width: 22%;
   }
 }
 @media (width >= 1400px) {
   .c-contents.-f-view .c-contentsBox.-f-title {
-    width: 20%;
+    width: 22%;
   }
 }
 .c-contents.-f-view .c-contentsBox.-f-subTitle {
-  top: 26%;
+  top: 12%;
   left: 8%;
-  width: 50%;
+  width: 70%;
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-subTitle {
-    top: 31%;
     left: 3.5%;
-    width: 17%;
+    top: 20%;
+    width: 35%;
   }
 }
 .c-contents.-f-view .c-contentsBox.-f-logo {
-  top: 95%;
   right: 3%;
   width: 25%;
+  top: 0%;
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-logo {
-    top: 3%;
-    right: 3%;
-    width: 7%;
+    top: 0%;
+    right: 6%;
+    width: 10%;
   }
 }
 .c-contents.-imgBg .c-contentsBox {
