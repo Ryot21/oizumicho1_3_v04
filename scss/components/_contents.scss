@@ -87,6 +87,18 @@
 	&.-imgBg{//背景画像
 		.c-contentsBox{//背景要素内 > 設置場所
 			position: absolute;
+
+			// 6,180
+			&.-btn{
+				top: 84%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: auto;
+				@include min(768){
+					top: 83%;
+				}
+			}
+
 			// ギャラリー01
 			&.-g-title{
 				top: 4%;

@@ -138,8 +138,8 @@ p {
 }
 h1, h2, h3, h4, h5, h6, p, a, span, label, button {
   color: #333333;
-  font-family: mincho-font01;
-  font-weight: normal;
+  font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+  font-weight: 600;
   font-style: normal;
   line-height: 1.3;
 }
@@ -255,10 +255,10 @@ h1.-white, h2.-white, h3.-white, h4.-white, h5.-white, h6.-white, p.-white, a.-w
   color: #ffffff !important;
 }
 h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.-color01, a.-color01, span.-color01, label.-color01, button.-color01 {
-  color: #ffff00 !important;
+  color: #e57f8f !important;
 }
 h1.-color02, h2.-color02, h3.-color02, h4.-color02, h5.-color02, h6.-color02, p.-color02, a.-color02, span.-color02, label.-color02, button.-color02 {
-  color: #808080 !important;
+  color: #ffff00 !important;
 }
 h1.-color03, h2.-color03, h3.-color03, h4.-color03, h5.-color03, h6.-color03, p.-color03, a.-color03, span.-color03, label.-color03, button.-color03 {
   color: #599465 !important;
@@ -2878,11 +2878,11 @@ button.swiper-pagination-bullet {
   padding: 0 5px;
 }
 .c-borderBox.-double {
-  border: 4px double #ffff00;
+  border: 4px double #e57f8f;
 }
 @media (width >= 768px) {
   .c-borderBox.-double {
-    border: 7px double #ffff00;
+    border: 7px double #e57f8f;
   }
 }
 .c-borderBox.-solid {
@@ -2943,7 +2943,7 @@ button.swiper-pagination-bullet {
 }
 
 .colorBox {
-  background: #808080;
+  background: #ffff00;
   padding: 3% 0 6%;
   border-radius: 5px;
 }
@@ -2962,7 +2962,7 @@ button.swiper-pagination-bullet {
   background: #599465;
 }
 .colorLabel.-orange:hover {
-  background: #808080;
+  background: #ffff00;
 }
 
 .c-img.-b-frame {
@@ -3318,7 +3318,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-footer__contactArea .c-footer__contactLists li:hover {
-  background: #808080;
+  background: #ffff00;
 }
 .c-footer__contactArea .c-footer__contactLists li:hover a, .c-footer__contactArea .c-footer__contactLists li:hover span {
   color: #ffffff !important;
@@ -3429,13 +3429,13 @@ button.swiper-pagination-bullet {
   display: block;
   padding: 5% 0;
   text-align: center;
-  border: 1px solid #808080;
-  background: #808080;
+  border: 1px solid #ffff00;
+  background: #ffff00;
   transition: 0.5s all;
 }
 @media (width >= 768px) {
   .c-footer__btnArea label.popup {
-    color: #808080;
+    color: #ffff00;
     background: #ffffff;
   }
 }
@@ -3444,12 +3444,12 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-footer__btnArea label.popup span {
-    color: #808080;
+    color: #ffff00;
   }
 }
 .c-footer__btnArea label.popup:hover {
   color: #ffffff !important;
-  background: #808080 !important;
+  background: #ffff00 !important;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
 }
 .c-footer__shopArea {
@@ -3788,6 +3788,17 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-imgBg .c-contentsBox {
   position: absolute;
+}
+.c-contents.-imgBg .c-contentsBox.-btn {
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-btn {
+    top: 83%;
+  }
 }
 .c-contents.-imgBg .c-contentsBox.-g-title {
   top: 4%;
@@ -5893,12 +5904,12 @@ a {
     background-color: #599465;
   }
   100% {
-    background-color: #808080;
+    background-color: #ffff00;
   }
 }
 @keyframes bg-color-bg_r {
   0% {
-    background-color: #808080;
+    background-color: #ffff00;
   }
   100% {
     background-color: #599465;
