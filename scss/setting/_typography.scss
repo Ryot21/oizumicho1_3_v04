@@ -151,6 +151,8 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
         &.s-LL{
             font-size: 2.1rem;
             @include min(768){font-size: clamp(1.8rem, 3vw, 3rem);}
+            &.-s12{@include max(768){font-size: 1.2rem;}}
+            &.-s14{@include max(768){font-size: 1.4rem;}}
             &.-s16{@include max(768){font-size: 1.6rem;}}
         }
         &.s-3L{

@@ -244,6 +244,7 @@
 .pdr3s  {@include max(768){padding-right: 3% !important;}}
 .pdr4s  {@include max(768){padding-right: 4% !important;}}
 .pdr5s  {@include max(768){padding-right: 5% !important;}}
+.pdr10s  {@include max(768){padding-right: 10% !important;}}
 
 // 768px以上
 .pdr0  {@include min(768){padding-right: 0  !important;}}
@@ -252,6 +253,7 @@
 .pdr3  {@include min(768){padding-right: 3% !important;}}
 .pdr4  {@include min(768){padding-right: 4% !important;}}
 .pdr5  {@include min(768){padding-right: 5% !important;}}
+.pdr10  {@include min(768){padding-right: 10% !important;}}
 
 .pd0 {padding:0!important;}
 .pd5 {padding: 5%!important;}

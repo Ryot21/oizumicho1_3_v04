@@ -377,6 +377,16 @@ h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL,
   }
 }
 @media (768px >= width) {
+  h1.s-LL.-s12, h2.s-LL.-s12, h3.s-LL.-s12, h4.s-LL.-s12, h5.s-LL.-s12, h6.s-LL.-s12, p.s-LL.-s12, a.s-LL.-s12, span.s-LL.-s12, label.s-LL.-s12, button.s-LL.-s12 {
+    font-size: 1.2rem;
+  }
+}
+@media (768px >= width) {
+  h1.s-LL.-s14, h2.s-LL.-s14, h3.s-LL.-s14, h4.s-LL.-s14, h5.s-LL.-s14, h6.s-LL.-s14, p.s-LL.-s14, a.s-LL.-s14, span.s-LL.-s14, label.s-LL.-s14, button.s-LL.-s14 {
+    font-size: 1.4rem;
+  }
+}
+@media (768px >= width) {
   h1.s-LL.-s16, h2.s-LL.-s16, h3.s-LL.-s16, h4.s-LL.-s16, h5.s-LL.-s16, h6.s-LL.-s16, p.s-LL.-s16, a.s-LL.-s16, span.s-LL.-s16, label.s-LL.-s16, button.s-LL.-s16 {
     font-size: 1.6rem;
   }
@@ -1709,6 +1719,12 @@ span.-block {
   }
 }
 
+@media (768px >= width) {
+  .pdr10s {
+    padding-right: 10% !important;
+  }
+}
+
 @media (width >= 768px) {
   .pdr0 {
     padding-right: 0 !important;
@@ -1742,6 +1758,12 @@ span.-block {
 @media (width >= 768px) {
   .pdr5 {
     padding-right: 5% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr10 {
+    padding-right: 10% !important;
   }
 }
 
@@ -2820,6 +2842,13 @@ button.swiper-pagination-bullet {
 }
 
 @media (768px >= width) {
+  .w75s {
+    width: 75% !important;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
   .w45s {
     width: 45% !important;
     margin: auto;
@@ -3067,6 +3096,7 @@ button.swiper-pagination-bullet {
   height: 100px;
   background: url(../images/SVG/Ryutaro_Saito.svg);
   background-repeat: no-repeat;
+  filter: drop-shadow(1px 1px 5px #333333);
 }
 @media (width >= 768px) {
   .-profLogo::after {
@@ -3429,13 +3459,13 @@ button.swiper-pagination-bullet {
   display: block;
   padding: 5% 0;
   text-align: center;
-  border: 1px solid #ffff00;
-  background: #ffff00;
+  border: 1px solid #333333;
+  background: #333333;
   transition: 0.5s all;
 }
 @media (width >= 768px) {
   .c-footer__btnArea label.popup {
-    color: #ffff00;
+    color: #333333;
     background: #ffffff;
   }
 }
@@ -3444,13 +3474,18 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-footer__btnArea label.popup span {
-    color: #ffff00;
+    color: #333333;
   }
 }
 .c-footer__btnArea label.popup:hover {
   color: #ffffff !important;
   background: #ffff00 !important;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+}
+@media (width >= 768px) {
+  .c-footer__btnArea label.popup:hover {
+    color: #333333 !important;
+  }
 }
 .c-footer__shopArea {
   width: 60%;
@@ -4200,6 +4235,7 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-flex.-col1_2 {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 .c-flex.-col1_2 li {
@@ -4208,12 +4244,6 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-flex.-col1_2 li {
     width: calc(50% - 15px);
-  }
-  .c-flex.-col1_2 li:nth-child(1) {
-    margin-right: 15px;
-  }
-  .c-flex.-col1_2 li:nth-child(2) {
-    margin-left: 15px;
   }
 }
 @media (width >= 768px) {
@@ -4233,12 +4263,6 @@ button.swiper-pagination-bullet {
   .c-flex.-col1_2.-r li {
     width: calc(50% - 15px);
   }
-  .c-flex.-col1_2.-r li:nth-child(1) {
-    margin-left: 15px;
-  }
-  .c-flex.-col1_2.-r li:nth-child(2) {
-    margin-right: 15px;
-  }
 }
 @media (width >= 768px) {
   .c-flex.-col1_2.-r li.text {
@@ -4250,12 +4274,16 @@ button.swiper-pagination-bullet {
     width: calc(65% - 15px);
   }
 }
+.c-flex.-col1_2.-p6_4 {
+  justify-content: end !important;
+}
 @media (width >= 768px) {
   .c-flex.-col1_2.-p6_4 .flex-item:nth-child(1) {
-    width: 60%;
+    width: 40%;
+    margin-right: -10%;
   }
   .c-flex.-col1_2.-p6_4 .flex-item:nth-child(2) {
-    width: 40%;
+    width: 55%;
   }
 }
 @media (768px >= width) {

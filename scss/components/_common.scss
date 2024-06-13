@@ -45,6 +45,12 @@
         margin: auto;
     }
 }
+.w75s{
+    @include max(768){
+        width: 75% !important;
+        margin: auto;
+    }
+}
 .w45s{
     @include max(768){
         width: 45% !important;
@@ -267,6 +273,7 @@
         height: 100px;
         background: url(../images/SVG/Ryutaro_Saito.svg);
         background-repeat: no-repeat;
+        filter: drop-shadow(1px 1px 5px $main-color--b);
         @include min(768){top: 15%;}
     }
 }

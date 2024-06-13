@@ -46,17 +46,12 @@
         flex-wrap: wrap;
         @include min(768){
             flex-wrap: nowrap;
+            justify-content: space-between;
         }
         li{
             width: 100%;
             @include min(768){
                 width: calc(50% - 15px);
-                &:nth-child(1){
-                    margin-right: 15px;
-                }
-                &:nth-child(2){
-                    margin-left: 15px;
-                }
             }
             &.text{
                 @include min(768){
@@ -74,12 +69,6 @@
                 width: 100%;
                 @include min(768){
                     width: calc(50% - 15px);
-                    &:nth-child(1){
-                        margin-left: 15px;
-                    }
-                    &:nth-child(2){
-                        margin-right: 15px;
-                    }
                 }
                 &.text{
                     @include min(768){
@@ -94,13 +83,15 @@
             }
         }
         &.-p6_4{
+            justify-content: end !important;
             .flex-item{
                 @include min(768){
                     &:nth-child(1){
-                        width: 60%;
+                        width: 40%;
+                        margin-right: -10%;
                     }
                     &:nth-child(2){
-                        width: 40%;
+                        width: 55%;
                     }
                 }
             }
