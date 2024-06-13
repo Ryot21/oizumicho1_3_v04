@@ -1,0 +1,23 @@
+
+.box-shadow{
+    &_r{
+        box-shadow: 1px 1px 1px $main-color--b;
+    }
+    &_l{
+        box-shadow: -1px 1px 1px $main-color--b;
+    }
+}
+
+.p-research{
+    width: 100vw;
+	height: 100vh;
+    .c-flex{
+        &.-column2{
+            li{
+                @include min(768){
+                    width: calc(48% - 5px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,242 @@
+// フッター
+.c-footer{
+	width: 100vw;
+	height: auto;
+	margin-bottom: 25%;
+	@include min(768){
+		margin-bottom: 5%;
+	}
+	&-wrapper{
+		align-items: center;
+		width: 90%;
+		margin: auto;
+		height: auto;
+		// background: #bfbebe2e;
+		@include min(768){
+			width: 90%;
+			max-width: 1100px;
+		}
+		@include min(1600){
+			width: 70.4%;
+		}
+		&.-v02{
+			@include max(768){
+				width: 90%;
+			}
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			width: 100vw;
+			height: 1px;
+			background: $main-color--b;
+		}
+	}
+	&__contactArea{
+		.c-footer__contactLists{
+			position: relative;
+			display: flex;
+			flex-wrap: nowrap;
+			&::before{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100vw;
+				height: 1px;
+				background: $main-color--b;
+			}
+			&::after{
+				content: "";
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+				width: 100vw;
+				height: 1px;
+				background: $main-color--b;
+			}
+			li{
+				position: relative;
+				width: calc(100%/2);
+				height: auto;
+				padding: 5% 0;
+				transition: .5s all;
+				@include min(768){
+					width: calc(100%/4);
+					padding: 4% 0;
+				}
+				&:hover{
+					background: $site-color02;
+					a,span{color: $main-color--w !important;}
+				}
+				&:first-child{
+					&::before{
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+						height: 100%;
+						width: 1px;
+						background: $main-color--b;
+					}
+				}
+				&::after{
+					content: "";
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: translateY(-50%);
+					height: 100%;
+					width: 1px;
+					background: $main-color--b
+				}
+				a{
+					display: block;
+				}
+
+				// SOLD OUT時に使用する
+				&.-grayOutItem{
+					pointer-events: none;
+				}
+			}
+		}
+	}
+	&__navArea{
+		.c-footer__navLists{
+			display: flex;
+			flex-wrap: nowrap;
+			@include max(768){
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			li{
+				position: relative;
+				width: calc(100%/3);
+				height: auto;
+				padding: 2.1% 0;
+				@include min(768){
+					width: calc(100%/6);
+				}
+				&:first-child{
+					&::before{
+						content: "";
+						position: absolute;
+						top: 59%;
+						left: 0;
+						transform: translateY(-50%);
+						height: 40%;
+						width: 1px;
+						background: $main-color--b;
+						@include min(768){
+							height: 25%;
+						}
+					}
+				}
+				&:nth-child(5){
+					@include max(768){
+						&::before{
+							content: "";
+							position: absolute;
+							top: 59%;
+							left: 0;
+							transform: translateY(-50%);
+							height: 40%;
+							width: 1px;
+							background: $main-color--b;
+						}
+					}
+				}
+				&::after{
+					content: "";
+					position: absolute;
+					top: 59%;
+					right: 0;
+					transform: translateY(-50%);
+					height: 40%;
+					width: 1px;
+					background: $main-color--b;
+					@include min(768){
+						height: 25%;
+					}
+				}
+				a{
+					display: block;
+				}
+			}
+		}
+	}
+	&__btnArea{
+		width: 50%;
+		margin: auto;
+		@include min(768){
+			width: 16%;
+			max-width: 300px;
+		}
+		label{
+			&.popup{
+				display: block;
+				padding: 5% 0;
+				text-align: center;
+				border: 1px solid $site-color02;
+				background: $site-color02;
+				transition: .5s all;
+				@include min(768){
+					color: $site-color02;
+					background: $main-color--w;
+				}
+				span{
+					color: $main-color--w;
+					@include min(768){
+						color: $site-color02;
+					}
+				}
+				&:hover{
+					color: $main-color--w !important;
+					background: $site-color02 !important;
+					// border-radius: 10px;
+					box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+				}
+			}
+		}
+	}
+	&__shopArea{
+		width: 60%;
+		margin: auto;
+		@include min(768){
+			width: 40%;
+			max-width: 1000px;
+		}
+		.c-footer__shopFlex{
+			display: flex;
+			flex-wrap: wrap;
+			@include min(768){
+				flex-wrap: nowrap;
+				justify-content: center;
+			}
+			li{
+				width: 100%;
+				&:nth-child(1){
+					@include max(768){
+						padding: 0 5%;
+						margin-bottom: 5%;
+					}
+					@include min(768){
+						width: 40%;
+					}
+				}
+				&:nth-child(2){
+					@include min(768){
+						width: 60%;
+						padding-left: 5%;
+					}
+				}
+			}
+		}
+	}
+}

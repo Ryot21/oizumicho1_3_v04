@@ -1,0 +1,144 @@
+// リンク関係（aタグ）
+
+  /* 右三角形 */
+  .triangle-right {
+	background: #808080;
+	clip-path: polygon(0 0, 0 100%, 100% 50%);
+  }
+  /* 共通のスタイル */
+  .triangle {
+	display: inline-block;
+  /*   background-color: #333; */
+	height: 5px;
+	width: 5px;
+  }
+
+
+.c-link{
+	&.-nav{
+		display: block;
+		width: auto;
+		transition: all 0.5s;
+		&:hover{ transform: scale(1.05); }
+	}
+	&.-contact{
+		position: relative;
+		display: block;
+		width: auto;
+		height: auto;
+		border-bottom: 1px solid #00000030;
+		transition: all 0.5s;
+		&::after{
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translate(-50%, -50%);
+			margin-left: 0.5em;
+			display: inline-block;
+			border-style: solid;
+			border-width: 1em 0 1em 1.865em;
+			border-color: transparent transparent transparent #000;
+			transform: translateY(0.1em) scale(0.8) rotate(0deg);
+			transition: all .5s;
+			@include max(768){
+				top: 46%;
+			}
+		}
+		&:hover{
+			border-bottom: 1px solid #000000;
+			&::after{color: #000000;}
+		}
+	}
+	&.-img{
+		display: block;
+        transform: scale(1);
+        transition-duration: 0.5s;
+		transition: all 0.5s ease-in-out;
+        overflow: hidden;
+		&:hover{
+			transform: scale(1.025);
+			transition-duration: 0.2s;
+			// box-shadow: 1px 1px 4px 0px $item-hover--bg;
+		}
+	}
+	&.-text{
+		width: auto;
+		transition: 1s;
+		.logoBox{
+			position: relative;
+			transition: 1s;
+			&::after{
+				content: "";
+				background-image: url(../images/SVG/logo_text.svg);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				height: 100%;
+				transition: 1s;
+				filter: drop-shadow(0px 0px 1px black);
+				opacity: 0;
+			}
+		}
+
+		.textBox{
+			width: auto;
+			margin: auto;
+			overflow: hidden;
+			@include min(768){
+				width: 80%;
+			}
+			@include min(1600){
+				width: 50%;
+			}
+			&.-p01{
+				width: 100%;
+				@include min(768){
+					width: 80%;
+				}
+				@include min(1600){
+					width: 100%;
+				}
+			}
+			p{
+				position: relative;
+				transition: 1s;
+				&::after{
+					content: "";
+					position: absolute;
+					bottom: -2%;
+					left: -50%;
+					transform: translateX(-50%);
+					width: 100%;
+					height: 2px;
+					background: $main-color--w;
+					transition: 2s all;
+				}
+			}
+		}
+		&:hover{
+			.logoBox{
+				// filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.247));
+				transform: scale(1.05);
+				&::after{
+					top: 55%;
+					left: 55%;
+					opacity: .2;
+					filter: drop-shadow(2px 2px 3px black);
+				}
+			}
+			.textBox{
+				p{
+					transform: scale(1.05);
+					&::after{
+						left: 50%;
+						background: $main-color--Dgray;
+						// border: 1px solid $main-color--Dgray;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,113 @@
+/* 
+    ここには他アニメーションでも使うような
+    共通のクラスを記述すること。
+    ※アニメーションを作成後、必ずここにも追加すること。
+*/
+
+.a{
+    /* ---------------------------------------
+        colorアニメーション
+    --------------------------------------- */
+    &-bg-color,&-text-color,&-rotate-bg,
+    /* ---------------------------------------
+        fadeアニメーション
+    --------------------------------------- */
+    &-fade,&-fadeUp,&-fadeDown,&-fadeLeft,&-fadeRight,
+    /* ---------------------------------------
+        fadeアニメーション
+    --------------------------------------- */
+    &-flipDown,&-flipLeft,&-flipRight,
+    /* ---------------------------------------
+        moveアニメーション
+    --------------------------------------- */
+    &-moveUp,&-moveDown,
+    /* ---------------------------------------
+        zoomアニメーション
+    --------------------------------------- */
+    &-scOutImg,
+    /* ---------------------------------------
+        オリジナルアニメーション
+    --------------------------------------- */
+    &-bird_r,&-bird_l01,&-bird_l02,&-purupuru{
+    /* ---------------------------------------
+        各アニメーション_オプション関係
+    --------------------------------------- */
+            // 速度
+            &.-sp05{animation-duration:0.5s;}
+            &.-sp1 {animation-duration:1s;}
+            &.-sp15{animation-duration:1.5s;}
+            &.-sp2 {animation-duration:2s;}
+            &.-sp25{animation-duration:2.5s;}
+            &.-sp3 {animation-duration:3s;}
+            &.-sp35{animation-duration:3.5s;}
+            &.-sp4 {animation-duration:4s;}
+            &.-sp45{animation-duration:4.5s;}
+            &.-sp5 {animation-duration:5s;}
+            &.-sp55{animation-duration:5.5s;}
+            &.-sp6 {animation-duration:6s;}
+            &.-sp65{animation-duration:6.5s;}
+            &.-sp7 {animation-duration:7s;}
+            &.-sp75{animation-duration:7.5s;}
+            &.-sp8 {animation-duration:8s;}
+            &.-sp85{animation-duration:8.5s;}
+            &.-sp9 {animation-duration:9s;}
+            &.-sp95{animation-duration:9.5s;}
+            &.-sp10 {animation-duration:10s;
+                img{animation-duration:10s}
+            }
+            &.-sp20 {animation-duration:20s;
+                img{animation-duration:20s}
+            }
+            // スクロール化
+            &.-sc-40{
+                animation-timeline: view();
+                animation-range: entry -30% contain -20%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry -30% contain -20%;
+                }
+            }
+            &.-sc-20{
+                animation-timeline: view();
+                animation-range: entry -20% contain 30%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry -20% contain 30%;
+                }
+            }
+            &.-sc{
+                animation-timeline: view();
+                animation-range: entry 0% contain 50%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry 0% contain 50%;
+                }
+            }
+            &.-sc20{
+                animation-timeline: view();
+                animation-range: entry 20% contain 30%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry 20% contain 30%;
+                }
+            }
+            &.-sc30{
+                animation-timeline: view();
+                animation-range: entry 30% contain 40%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry 30% contain 40%;
+                }
+            }
+            &.-sc40{
+                animation-timeline: view();
+                animation-range: entry 40% contain 50%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry 40% contain 50%;
+                }
+            }
+            // シャドウ
+            &.-sh{filter: drop-shadow(2px 2px 2px gray);}
+        }
+}

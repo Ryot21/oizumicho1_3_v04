@@ -1,0 +1,78 @@
+
+
+button{
+	transition: .3s;
+	&:hover{
+			transition: .3s;
+			opacity: .8;
+	}
+}
+
+
+.c-btn{
+	&-fixed{//SP 画面下固定/PC 画面右固定
+		position: fixed;
+		top: auto;
+		left: 50%;
+		bottom: 1px;
+		color: $main-color--b;
+		border: 1px solid $main-color--b;
+		cursor: pointer;
+		box-shadow: 0 2px 4px $main-color--b;
+		z-index: 99;
+		@include max(768){transform: translateX(-50%);}
+		@include min(768){
+			top: 25%;
+			left: auto;
+			bottom: auto;
+			right: 5px;
+		}
+		.c-btn-lists{
+			display: flex;
+			flex-wrap: nowrap;
+			width: auto;
+			@include min(768){
+				flex-wrap: wrap;
+				flex-direction: column;
+			}
+			li{
+				position: relative;
+				width: 50vw;
+				@include min(768){
+					width: auto;
+					writing-mode: vertical-rl;
+				}
+				&:first-child{
+					@include max(768){
+						border-right: 1px solid $main-color--b;
+					}
+					@include min(768){
+						border-bottom: 1px solid $main-color--b;
+					}
+				}
+				a{
+					width: 100%;
+					padding: 10% 0;
+					background: $main-color--w;
+					@include min(768){
+						width: auto;
+						padding: 30px 10%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*    Link
+--------------------------------------------------------------------------------*/
+  
+a{
+	transition: .3s;
+	color: $main-color--b;
+	// text-decoration: underline;
+}
+// a:link {   color: $site-color01; text-decoration: underline;}
+// a:visited {color: $site-color01; text-decoration: none;}
+// a:hover {  color: $site-color01; text-decoration: none;transition: .3s;opacity: .8;}
+// a:active { color: $site-color01; text-decoration: none;}

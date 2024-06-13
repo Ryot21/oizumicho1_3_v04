@@ -1,0 +1,272 @@
+// 共通
+
+// 横幅
+.w1100{
+    @include min(768){
+        width: 90% !important;
+        margin: auto;
+    }
+    @include min(1100){
+        width: 90% !important;
+        max-width: 1100px;
+    }
+}
+.w100{
+    width: 100%;
+    margin: auto;
+}
+.w98{
+    width: 98%;
+    margin: auto;
+}
+.w95{
+    width: 95%;
+    margin: auto;
+}
+.w90{
+    width: 90%;
+    margin: auto;
+}
+.w95s{
+    @include max(768){
+        width: 95% !important;
+        margin: auto;
+    }
+}
+.w90s{
+    @include max(768){
+        width: 90% !important;
+        margin: auto;
+    }
+}
+.w85s{
+    @include max(768){
+        width: 85% !important;
+        margin: auto;
+    }
+}
+.w45s{
+    @include max(768){
+        width: 45% !important;
+        margin: auto;
+    }
+}
+.w60{
+    @include min(768){
+        width: 60% !important;
+        margin: auto;
+    }
+}
+.w50{
+    @include min(768){
+        width: 50% !important;
+        margin: auto;
+    }
+}
+.w30{
+    @include min(768){
+        width: 40% !important;
+        margin: auto;
+    }
+    @include min(1000){
+        width: 30% !important;
+    }
+}
+
+.bannerArea{
+    width: 60%;
+    max-width: 400px;
+    margin: auto;
+    @include min(768){
+        width: 37%;
+    }
+}
+
+.c-borderBox{
+    padding: 3%;
+    @include min(768){
+        // width: 95%;
+        width: 100%;
+        padding: 1% 1% 2%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    span{
+        padding: 0 5px;
+    }
+    &.-double{
+        border: 4px double $site-color01;
+        @include min(768){
+            border: 7px double $site-color01;
+        }
+    }
+    &.-solid{
+        border: 1px solid $main-color--b;
+        @include min(768){
+            border: 2px solid $main-color--b;
+        }
+    }
+}
+
+.setubi-title{
+    position: relative;
+    .m-logo{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &.-cleanup{
+            left: 40%;
+            transform: translate(-50%, -45%);
+            width: 35%;
+            @include min(768){
+                left: 67%;
+                transform: translate(-50%, -40%);
+                width: 53%;
+            }
+        }
+        &.-toto{
+            left: 47.5%;
+            transform: translate(-48%, -50%);
+            width: 44%;
+            @include min(768){
+                top: 33%;
+                left: 71%;
+                transform: translate(-50%, -50%);
+                width: 50%;
+            }
+        }
+        &.-ykkap{
+            left: 47%;
+            top: 40%;
+            transform: translate(-55%, -50%);
+            width: 28%;
+            @include min(768){
+                top: 34%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+                width: 14%;
+            }
+        }
+    }
+}
+
+.colorBox{
+    background: $site-color02;
+    padding: 3% 0 6%;
+    border-radius: 5px;
+    @include min(768){
+        padding: 3% 0 4%;
+    }
+}
+
+.colorLabel{
+    padding: 0.5% 0 .8%;
+    border-radius: 30px;
+    transition: all 2s;
+    &.-orange{
+        background: $site-color03;
+        &:hover{
+            background: $site-color02;
+        }
+    }
+}
+
+// 画像関係
+.c-img{
+    // ボーダー枠
+    &.-b-frame{
+        border: 2px solid $main-color--b;
+        border-radius: 20px;
+        overflow: hidden;
+        &.-left{
+            border-top: 2px solid $main-color--b;
+            border-right: 2px solid $main-color--b;
+            border-bottom: 2px solid $main-color--b;
+            border-radius: 0 20px 20px 0;
+        }
+        &.-right{
+            border-top: 2px solid $main-color--b;
+            border-left: 2px solid $main-color--b;
+            border-bottom: 2px solid $main-color--b;
+            border-radius: 20px 0 0 20px;
+        }
+    }
+    // シャドウ
+    &.-shadow{
+        box-shadow: 1px 3px 5px 1px rgb(0 0 0 / 34%);
+    }
+}
+.box-r{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+// タイトル関係
+.c-title{
+    &.-pageTitle{// ページタイトル
+        width: 45%;
+        @include min(768){
+            width: 50%;
+        }
+    }
+    &.-contentTitle{// ページタイトル
+        width: 100%;
+        @include min(768){
+            width: 70%;
+            margin: auto;
+        }
+    }
+    &.-top{// TOPページ
+        width: 45%;
+        @include min(768){
+            width: 40%;
+        }
+    }
+}
+
+// アイコン関係
+.c-logo{
+    &.-camp{
+        width: 50%;
+        @include max(768){
+            text-align: end;
+        }
+        @include min(768){
+            width: 40%;
+        }
+    }
+    &.-bbq{
+        width: 50%;
+        @include max(768){
+            text-align: end;
+        }
+        @include min(768){
+            width: 40%;
+            margin-right: 10%;
+            margin-left: auto;
+        }
+    }
+}
+
+.c-prof{
+    @include min(768){
+        width: 50%;
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+.-profLogo{
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 25%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 100px;
+        background: url(../images/SVG/Ryutaro_Saito.svg);
+        background-repeat: no-repeat;
+        @include min(768){top: 15%;}
+    }
+}

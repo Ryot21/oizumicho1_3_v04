@@ -1,0 +1,343 @@
+// コンテンツ
+.c-container{
+	width: 100vw;
+	height: auto;
+}
+
+.c-contents{
+	position: relative;
+	&-inner{
+		width: 90%;
+		margin: auto;
+		@include min(768){
+			width: 95%;
+			max-width: 1100px;
+		}
+	}
+	.imgBox{
+		&.-sp{
+			@include max(768){
+				width: 100vw;
+				height: 710px;
+			}
+		}
+	}
+	&.-f-view{//ファーストビュー
+		position: relative;
+		// overflow: hidden;
+		.imgBox{
+			&.-top{
+				&::after{
+					content:"";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-image: url(../images/bg/f-view_s.jpg);
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: left bottom;
+					z-index: -1;
+					@include min(768){
+						background-image: url(../images/bg/f-view.jpg);
+					}
+				}
+			}
+		}
+		.c-contentsBox{
+			position: absolute;
+			&.-f-title{// タイトル
+				top: 5%;
+				left: 7%;
+				width: 60%;
+				@include min(768){// tb
+					top: 5%;
+					left: 3%;
+					width: 20%;
+				}
+				@include min(1400){
+					width: 20%;
+				}
+			}
+			&.-f-subTitle{// サブタイトル
+				top: 26%;
+				left: 8%;
+				width: 50%;
+				@include min(768){// tb
+					top: 31%;
+					left: 3.5%;
+					width: 17%;
+				}
+				@include min(1400){
+					// width: 15%;
+				}
+			}
+			&.-f-logo{// ロゴ関係
+				top: 95%;
+				right: 3%;
+				width: 25%;
+				@include min(768){
+					top: 3%;
+					right: 3%;
+					width: 7%;
+				}
+			}
+
+
+		}
+	}
+	&.-imgBg{//背景画像
+		.c-contentsBox{//背景要素内 > 設置場所
+			position: absolute;
+			// ギャラリー01
+			&.-g-title{
+				top: 4%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: auto;
+				@include min(768){
+					top: 3%;
+					left: 77%;
+				}
+			}
+			&.-g-pic01{
+				top: 15%;
+				left: 0%;
+				width: 30%;
+				@include min(768){
+					top: 0%;
+					left: 0%;
+					width: 30%;
+				}
+			}
+			&.-g-pic02{
+				top: 29.1%;
+				left: 35%;
+				width: 30%;
+				@include min(768){
+					top: 18.1%;
+					left: 35%;
+					width: 30%;
+				}
+			}
+			&.-g-pic03{
+				top: 36.1%;
+				right: 0;
+				width: 30%;
+				@include min(768){
+					top: 28.1%;
+					right: 0;
+					width: 30%;
+				}
+			}
+			&.-g-pic04{
+				top: 57.1%;
+				left: 35%;
+				width: 30%;
+				@include min(768){
+					top: 53.1%;
+					left: 35%;
+					width: 30%;
+				}
+			}
+			&.-g-pic05{
+				bottom: 4%;
+				left: 0%;
+				width: 30%;
+				@include min(768){
+					bottom: 4%;
+					left: 0%;
+					width: 30%;
+				}
+			}
+
+			// ギャラリー02
+			&.-g02-title{
+				top: 1%;
+				left: 50%;
+				transform: translateX(-50%);
+				@include min(768){
+					top: 89.3%;
+				}
+			}
+			&.-g02-pic01{
+				top: 15%;
+				left: 35%;
+				width: 30%;
+				@include min(768){
+					top: 0%;
+					left: 35%;
+					width: 30%;
+				}
+			}
+			&.-g02-pic02{
+				top: 24.1%;
+				right: 0;
+				width: 30%;
+				@include min(768){
+					top: 18.1%;
+					right: 0;
+					width: 30%;
+				}
+			}
+			&.-g02-pic03{
+				top: 45.5%;
+				left: 35%;
+				width: 30%;
+				@include min(768){
+					top: 36.1%;
+					left: 35%;
+					width: 30%;
+				}
+			}
+			&.-g02-pic04{
+				top: 45.5%;
+				left: 0;
+				width: 30%;
+				@include min(768){
+					top: 36.5%;
+					left: 0;
+					width: 30%;
+				}
+			}
+			&.-g02-pic05{
+				bottom: 4%;
+				right: 0;
+				width: 30%;
+				@include min(768){
+					bottom: 0;
+					right: 0;
+					width: 30%;
+				}
+			}
+		}
+	}
+
+	&.w1100{
+		@include min(768){
+			width: 80%;
+			max-width: 1100px;
+			margin: auto;
+		}
+		@include min(1600){
+			width: 65%;
+			// width: 57.4%;
+		}
+	}
+	&.w95s{
+		@include max(768){
+			width: 95%;
+			margin: auto;
+		}
+	}
+	&.w90s{
+		@include max(768){
+			width: 90%;
+			margin: auto;
+		}
+	}
+	&.w85s{
+		@include max(768){
+			width: 85%;
+			margin: auto;
+		}
+	}
+	&.w80s{
+		@include max(768){
+			width: 80%;
+			margin: auto;
+		}
+	}
+}
+
+	// ロゴ関係
+	.logoArea{
+		margin: auto;
+		width: 32%;
+		@include min(768){
+			width: 18%;
+		}
+		@include min(1600){
+			width: 12%;
+		}
+		&.-c-In{
+			width: auto;
+			margin-left: 0;
+			img{
+				width: 7%;
+				@include min(768){
+					width: 10%;
+				}
+			}
+		}
+		&.-mugen{
+			@include min(768){
+				width: 10%;
+			}
+			@include min(1600){
+				width: 13%;
+			}
+		}
+	}
+	// タイトル関係
+	.titleArea{
+			&.-Concept,
+			&.-Planning,
+			&.-Location{
+				img{
+					width: 33%;
+					@include min(768){
+						width: 33%;
+					}
+				}
+			}
+			&.-ForExample{
+				img{
+					width: 43%;
+					@include min(768){
+						width: 33%;
+					}
+				}
+			}
+			&.-PrivateSkyTerrace{
+				img{
+					width: 68%;
+					@include min(768){
+						width: 53%;
+					}
+				}
+			}
+			&.-MakefullGallery{
+				img{
+					width: 55%;
+					@include min(768){
+						width: 53%;
+					}
+				}
+			}
+			&.-LifeInformation{
+				img{
+					width: 55%;
+					@include min(768){
+						width: 30%;
+					}
+				}
+			}
+		}
+	// スペル
+	.spell{
+		width: 33%;
+		@include min(768){
+			width: 33%;
+		}
+	}
+	// リサーチページ > 住宅地視察
+	// .sec-imgBox{
+	// 	position: relative;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	img{
+	// 		position: absolute;
+	// 	}
+	// }

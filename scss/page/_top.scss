@@ -1,0 +1,31 @@
+// 1. TOPページ
+
+.p-top{
+	width: 100vw;
+	height: 100vh;
+	&.-testBg{
+		// position: relative;
+		// &::after{
+		// 	content: "";
+		// 	width: 100vw;
+    // 	height: 100%;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	background-image: url(../images/top_s.png);
+		// 	background-repeat: no-repeat;
+		// 	background-size: cover;
+		// 	opacity: 0.5;
+		// 	z-index: -1;
+		// 	@include min(768){
+		// 		background-image: url(../images/top.png);
+		// 		// background-size: contain;
+		// 	}
+		// }
+	}
+	.testBox{
+		width: 100vw;
+		height: 150vh;
+		background: rgba(0, 0, 0, 0.392);
+	}
+}
