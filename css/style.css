@@ -3096,7 +3096,7 @@ button.swiper-pagination-bullet {
   height: 100px;
   background: url(../images/SVG/Ryutaro_Saito.svg);
   background-repeat: no-repeat;
-  filter: drop-shadow(1px 1px 5px #333333);
+  filter: drop-shadow(1px 1px 0px #ebebeb);
 }
 @media (width >= 768px) {
   .-profLogo::after {

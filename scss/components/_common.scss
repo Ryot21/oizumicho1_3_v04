@@ -273,7 +273,7 @@
         height: 100px;
         background: url(../images/SVG/Ryutaro_Saito.svg);
         background-repeat: no-repeat;
-        filter: drop-shadow(1px 1px 5px $main-color--b);
+        filter: drop-shadow(1px 1px 0px $main-color--gray);
         @include min(768){top: 15%;}
     }
 }
